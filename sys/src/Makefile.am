@@ -1,4 +1,4 @@
-source_list = config.cpp
+source_list = aol_string.cc
 
 AM_LDFLAGS = "-lpthread -lm -lrt"
 
@@ -7,6 +7,6 @@ lib_LTLIBRARIES = libaolsys.la
 libaolsys_la_SOURCES = $(source_list)
 libaolsys_la_LDFLAGS = $(AM_LDFLAGS) -static-libgcc
 
-include_HEADERS = config.h
+include_HEADERS = aol_string.h
 
-noninst_PROGRAMS=
+noinst_PROGRAMS=

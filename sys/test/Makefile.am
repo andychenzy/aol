@@ -1,7 +1,10 @@
-AM_CPPFLAGS = -I$(top_srdir)/src
-LDADD = $(top_srcdir)/src/.libs/libaol.a
+
+AM_CPPFLAGS = -I$(top_srcdir)/src
+
+LDADD = $(top_srcdir)/src/.libs/libaolsys.a
+
 AM_LDFLAGS = "-lpthread -lm -lrt"
 
-noninst_PROGRAMS = testConfig
+noinst_PROGRAMS = teststring
 
-testConfig_SOURCES = test_config.cc
+teststring_SOURCES = test_string.cc
