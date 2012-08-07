@@ -83,7 +83,3 @@ namespace aolsys {
 
 } // end of namespace aolsys
 
-
-      static int existPid(const char *szPidFile);
-
-      static void writePidFile(const char *szPidFile);

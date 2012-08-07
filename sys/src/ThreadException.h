@@ -1,0 +1,9 @@
+
+#ifndef AOL_SYS_THREAD_EXCEPTION_H_
+#define AOL_SYS_THREAD_EXCEPTION_H_
+
+
+
+
+#endif
+
