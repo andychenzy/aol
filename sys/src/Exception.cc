@@ -1,5 +1,6 @@
 
 #include <ostream>
+#include <sstream>
 #include <cstdlib>
 
 #include "Exception.h"
@@ -41,10 +42,11 @@ namespace utilInternal {
   const char* Exception::what() const throw()
   {
     try {
-      StaticMutex::Lock lock(globalMutex);
+      staticMutex::Lock lock(globalMutex);
       {
         if (_str.empty()) {
           stringstream s;
+          //ostream s;
           print(s);
           _str = s.str();
         }

@@ -1,5 +1,6 @@
 
 #include <iomanip>
+#include <sstream>
 #include <sys/time.h>
 
 #include "Time.h"
